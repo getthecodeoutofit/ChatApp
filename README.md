@@ -4,7 +4,7 @@ A feature-rich, secure chat application built with Node.js, Socket.IO, and Mongo
 
 <img src="/public/chat-app.png" />
 
-Inspired from - http://psitsmike.com/2011/10/node-js-and-socket-io-multiroom-chat-tutorial/
+Inspired from -  https://github.com/rajmasha/multi-room-chat-app.git
 
 ## Features
 
