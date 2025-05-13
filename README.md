@@ -1,4 +1,4 @@
-# ChatterBox - Secure Multi-Room Chat Application
+# ChatterBox - Personal Chat Application
 
 A feature-rich, secure chat application built with Node.js, Socket.IO, and MongoDB. ChatterBox allows users to communicate in real-time with end-to-end encryption, user authentication, and multiple chat rooms.
 
@@ -152,4 +152,4 @@ Inspired from -  https://github.com/rajmasha/multi-room-chat-app.git
 
 ## License
 
-MIT
+NONE
