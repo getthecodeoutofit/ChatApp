@@ -47,8 +47,8 @@ Before deploying to production, consider the following:
 
 3. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/chatterbox.git
-   cd chatterbox
+   git clone https://github.com/getthecodeoutofit/Chatapp.git
+   cd Chatapp
    ```
 
 4. **Install dependencies**
@@ -113,65 +113,6 @@ Before deploying to production, consider the following:
    sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
    ```
 
-### Option 2: Deploying to Heroku
-
-1. **Create a Heroku account and install the Heroku CLI**
-   Sign up at [heroku.com](https://heroku.com) and install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
-
-2. **Login to Heroku**
-   ```bash
-   heroku login
-   ```
-
-3. **Create a new Heroku app**
-   ```bash
-   heroku create your-app-name
-   ```
-
-4. **Add MongoDB Atlas as a database**
-   - Create a MongoDB Atlas account and cluster
-   - Get your MongoDB connection string
-   - Add it to Heroku:
-     ```bash
-     heroku config:set MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/chatterbox
-     ```
-
-5. **Set the encryption secret**
-   ```bash
-   heroku config:set ENCRYPTION_SECRET=your_strong_secret_key_here
-   ```
-
-6. **Deploy the application**
-   ```bash
-   git push heroku main
-   ```
-
-7. **Open the application**
-   ```bash
-   heroku open
-   ```
-
-### Option 3: Deploying to Railway
-
-1. **Create a Railway account**
-   Sign up at [railway.app](https://railway.app)
-
-2. **Create a new project from GitHub**
-   - Connect your GitHub account
-   - Select the ChatterBox repository
-
-3. **Add a MongoDB service**
-   - Click "New Service" and select MongoDB
-   - Railway will automatically provision a MongoDB instance
-
-4. **Set environment variables**
-   - Go to your project settings
-   - Add the following variables:
-     - `MONGODB_URI`: Use the Railway-provided MongoDB connection string
-     - `ENCRYPTION_SECRET`: Your strong secret key
-
-5. **Deploy the application**
-   Railway will automatically deploy your application when you push to your GitHub repository.
 
 ## Scaling Considerations
 
@@ -203,33 +144,6 @@ As your user base grows, consider the following scaling strategies:
    - Use version control (Git)
    - Consider implementing a CI/CD pipeline
 
-## Troubleshooting Production Issues
-
-1. **Check application logs**
-   ```bash
-   # For PM2
-   pm2 logs chatterbox
-   
-   # For Heroku
-   heroku logs --tail
-   ```
-
-2. **Verify MongoDB connection**
-   - Check if the MongoDB connection string is correct
-   - Ensure the MongoDB instance is running
-
-3. **Check for environment variable issues**
-   - Verify all required environment variables are set
-   - Check for typos in environment variable names
-
-4. **Restart the application**
-   ```bash
-   # For PM2
-   pm2 restart chatterbox
-   
-   # For Heroku
-   heroku restart
-   ```
 
 ## Security Best Practices
 

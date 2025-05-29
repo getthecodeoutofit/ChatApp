@@ -73,6 +73,17 @@
 
       <!-- Main Chat Section -->
       <div id="chat-section" class="chat_app hidden">
+        <!-- Mobile sidebar toggle buttons -->
+        <button id="left-sidebar-toggle" class="sidebar-toggle left-sidebar-toggle">
+          <i class="fas fa-users"></i>
+        </button>
+        <button id="right-sidebar-toggle" class="sidebar-toggle right-sidebar-toggle">
+          <i class="fas fa-comments"></i>
+        </button>
+
+        <!-- Overlay for mobile when sidebar is open -->
+        <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
         <div id="sidebar" class="left_sidebar">
           <div class="logo_text">
             <i class="fas fa-comments logo-icon"></i>
@@ -176,5 +187,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="mobile.js"></script>
   </body>
 </html>
