@@ -53,7 +53,7 @@ Inspired from -  https://github.com/rajmasha/multi-room-chat-app.git
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/chatterbox.git
+   git clone https://github.com/getthecodeoutofit/ChatApp.git
    cd chatterbox
    ```
 
